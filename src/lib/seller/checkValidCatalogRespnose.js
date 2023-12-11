@@ -4,7 +4,6 @@ const checkValidCatalogResponse = (items, sellerID) => {
       return false;
     }
 
-    // checking if each object has name and price field
     return items.every(
       (item) => typeof item === "object" && "name" in item && "price" in item
     );
@@ -12,5 +11,4 @@ const checkValidCatalogResponse = (items, sellerID) => {
     return error;
   }
 };
-
 module.exports = checkValidCatalogResponse;

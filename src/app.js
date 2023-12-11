@@ -9,6 +9,7 @@ const globalErrorHandler = require("./utils/globalErrorHandler");
 
 // routes
 const sellerRoutes = require("./routes/seller");
+const buyerRoutes = require("./routes/buyer");
 
 // utils
 const connectDB = require("./db/connectDB");
@@ -26,6 +27,7 @@ app.use(
 
 // middlewares
 app.use(sellerRoutes);
+app.use(buyerRoutes);
 
 const port = process.env.PORT || 5000;
 

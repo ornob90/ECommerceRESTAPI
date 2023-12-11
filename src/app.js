@@ -8,18 +8,24 @@ require("dotenv").config();
 const globalErrorHandler = require("./utils/globalErrorHandler");
 
 // routes
+const sellerRoutes = require("./routes/seller");
 
 // utils
 const connectDB = require("./db/connectDB");
 
 const app = express();
+
 app.use(express.json());
+
 app.use(
   cors({
     origin: [process.env.LOCAL_CLIENT],
     credentials: true,
   })
 );
+
+// middlewares
+app.use(sellerRoutes);
 
 const port = process.env.PORT || 5000;
 

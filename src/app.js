@@ -12,9 +12,6 @@ const sellerRoutes = require("./routes/seller");
 const buyerRoutes = require("./routes/buyer");
 const authRoutes = require("./routes/auth");
 
-// utils
-const connectDB = require("./db/connectDB");
-
 const app = express();
 
 app.use(express.json());

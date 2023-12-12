@@ -10,7 +10,3 @@ const generateToken = (userInfo) => {
 };
 
 module.exports = generateToken;
-
-// const token = jwt.sign(user, process.env.SECRET_KEY, {
-//     expiresIn: "1h",
-//   });

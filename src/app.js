@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
-
+const cookieParser = require("cookie-parser");
 // middle wares
 
 // error handlers
@@ -18,6 +18,7 @@ const connectDB = require("./db/connectDB");
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use(
   cors({

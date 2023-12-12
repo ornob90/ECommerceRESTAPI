@@ -87,7 +87,7 @@ This project comprises several APIs organized into different modules for authent
 
 1. Clone the repository.
 2. Install dependencies using `npm install`.
-3. Set up a `.env` file with the required environment variables.
+3. Set up a `.env` file with the required environment variables. You can watch demo.env for this provided in this repo
 4. Run the project using `npm start`.
 
 Feel free to explore and extend the project as needed. If you encounter any issues or have questions, please refer to the documentation or contact the project maintainers.

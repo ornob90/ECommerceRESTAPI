@@ -17,10 +17,20 @@ router.get(
   verifyBuyer,
   getAllSellers
 );
-router.get("/api/buyer/seller-catalog/:sellerId", getSellerCatalogs);
+router.get(
+  "/api/buyer/seller-catalog/:sellerId",
+  verifyToken,
+  verifyBuyer,
+  getSellerCatalogs
+);
 
 // POST
-router.post("/api/buyer/seller-catalog/:sellerId", createOrder);
+router.post(
+  "/api/buyer/seller-catalog/:sellerId",
+  verifyToken,
+  verifyBuyer,
+  createOrder
+);
 
 // DELETE
 router.delete(

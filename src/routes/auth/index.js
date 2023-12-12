@@ -5,6 +5,6 @@ const router = require("express").Router();
 
 // POST
 router.post("/api/auth/register", signup);
-router.post("/api/auth/login", verifyToken, login);
+router.post("/api/auth/login", login);
 
 module.exports = router;

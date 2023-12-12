@@ -11,6 +11,7 @@ const globalErrorHandler = require("./utils/globalErrorHandler");
 const sellerRoutes = require("./routes/seller");
 const buyerRoutes = require("./routes/buyer");
 const authRoutes = require("./routes/auth");
+const userRoutes = require("./routes/user");
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use(
 app.use(sellerRoutes);
 app.use(buyerRoutes);
 app.use(authRoutes);
+app.use(userRoutes);
 
 const port = process.env.PORT || 5000;
 

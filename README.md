@@ -85,12 +85,36 @@ This project comprises several APIs organized into different modules for authent
 
 ## How to Run the Project
 
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Set up a `.env` file with the required environment variables. You can watch demo.env for this provided in this repo
-4. Run the project using `npm start`.
+Follow these steps to run the project locally:
 
-Feel free to explore and extend the project as needed. If you encounter any issues or have questions, please refer to the documentation or contact the project maintainers.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ornob90/ECommerceRESTAPI.git
+   
+2.  Navigate to the project directory
+```
+cd ECommerceRESTAPI
+```
 
-Happy coding!
+3.  Install dependencies
+```
+npm install
+```
+
+4. Set up environment variables
+   - Create a `.env` file in the root directory
+   - Checkout the demo.env file provided by this repo
+
+5. Install nodemon
+   ```
+   npm i nodemon
+   ```
+
+5 Run the project using nodemon
+```
+ nodemon index
+```
+
+
+
  
